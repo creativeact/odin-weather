@@ -1,1 +1,1 @@
-<a href="git subtree push --prefix dist origin gh-pages">Live Preview<a>
+<a href="https://creativeact.github.io/odin-weather/">Live Preview<a>
