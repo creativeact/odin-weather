@@ -4,15 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Pirata+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="main.js"></script>
   </head>
   <body>
-    <input type="text" id="search-input" placeholder="Search away!" />
-    <buton id="search-button">Search</buton>
-    <div id="container">
-      <span id="date"></span>
-      <h2 id="city"></h2>
-      <span id="temp"></span>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Location" />
+      <button id="search-button">
+        <img id="search-icon" src="54ff7732bb1a5ff166c6.svg" />
+      </button>
     </div>
+    <div id="weather-container">
+      <div id="weather-left">
+        <h1 id="city"></h1>
+        <img id="icon" src="#" />
+        <span id="conditions"></span>
+      </div>
+      <div id="weather-right">
+        <span id="temp"></span>
+        <span id="feelslike"></span>
+        <div id="weather-right-bottom">
+          <div class="tempmax-wrapper">
+            <h4>High</h4>
+            <span id="tempmax"></span>
+          </div>
+          <div class="tempmin-wrapper">
+            <h4>Low</h4>
+            <span id="tempmin"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a
+        href="https://www.pexels.com/photo/green-pine-trees-covered-with-fogs-under-white-sky-during-daytime-167699/"
+        >Background image credit to Lum3n</a
+      >
+    </footer>
   </body>
 </html>
